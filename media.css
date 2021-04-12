@@ -1,0 +1,9 @@
+@media (max-width: 1000px){
+	.menu li:last-child{
+		margin-left: 800px;
+	}
+	.menu{
+		justify-content: space-between;
+		margin-left: -200px;
+	}
+}
