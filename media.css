@@ -1,9 +1,230 @@
-@media (max-width: 1000px){
-	.menu li:last-child{
-		margin-left: 800px;
+@media (max-width: 1000px) and (min-width: 768px){
+.container{width: 100%}
+	.call{
+		margin-left: 100px;
+width: 214px;
+height: 56px;
 	}
 	.menu{
-		justify-content: space-between;
-		margin-left: -200px;
+		margin-left: -330px;
+		font-size: 18px;
+line-height: 22px;
 	}
+	.menu li{
+       margin-right: 30px;
+	}
+	.phone{
+		width: 183px;
+left: 564px;
+font-size: 18px;
+line-height: 22px;
+	}
+.call{
+	width: 214px;
+height: 56px;
+top: 54px;
+left: 700px;
+}
+.container-fluid{
+    width: 100%;
+	}
+.container-fluid .container{
+		margin-left: 24px;
+	}
+.logo img{
+width: 111px;
+height: 111px;
+left: 24px;
+top: 27px;
+}
+.aboutus h5{
+	left: 24px;
+	margin-top: 0;
+}
+.aboutus p{
+width: 299px;
+left: 24px;
+top: 1056px;
+margin: 0;
+}
+.aboutus img:first-child{
+width: 298px;
+left: 351px;
+top: 1056px;
+}
+.aboutus img:last-child{
+width: 297px;
+left: 679px;
+top: 1011px;
+}
+}
+
+@media (max-width: 768px) and (min-width: 480px){
+.logo img {
+		left: 16px;
+	}
+.menu{
+  visibility: hidden;
+  top: 0;
+  width: 320px;
+  height: 100%;
+  margin: 0;
+  background-color: #121212;
+  opacity: 97%;
+	}
+.menu li{
+	display: block;
+	}
+.menu div{
+		 margin-top: 165px;
+		 margin-left: 16px;
+	}
+.menu  a {
+	display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+.menu__btn{
+		 visibility:visible;
+		 z-index: 3;
+	}	
+#menu__toggle:checked ~ .menu  {
+  visibility: visible;
+ overflow: visible;
+position: absolute;
+ z-index: 2;
+ right: 0;
+}
+.phone{
+left: 158px;
+}
+.call{
+	left: 410px;
+	margin-left: 0;
+}
+.aboutus h5{
+	left: 16px;
+	font-size: 26px;
+   line-height: 32px;
+}
+.aboutus p{
+width: 225px;
+left: 16px;
+font-size: 18px;}
+.aboutus img:first-child{
+width: 226px;
+height: 312px;
+left: 271px;
+top: 1049px;
+}
+.aboutus img:last-child{
+width: 224px;
+height: 312px;
+left: 528px;
+top: 1006px;
+}
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+	.logo img{
+		width: 90px;
+height: 90px;
+left: 16px;
+top: 16px;
+	}
+.menu__btn{left: 84.17%;
+right: 3.33%;
+top: 41px;}
+.container-fluid{
+    top:122px;
+	}
+.fluid h6{width: 437px;
+left: 0px;
+top: 0px;
+font-size: 26px;
+line-height: 32px;}
+.fluid p{width: 417px;
+left: 0px;
+top: 62px;
+font-size: 19px;
+line-height: 140%;}
+.fliud button{
+	width: 281px;
+height: 70px;
+left: 0px;
+top: 173px;
+margin-bottom: 343px;}
+.aboutus h5{width: 159px;
+left: 16px;
+top: 901px;
+font-size: 22px;
+line-height: 27px;}
+.aboutus p{width: 209px;
+left: 16px;
+top: 958px;
+font-size: 16px;
+line-height: 136%;}
+.aboutus img:first-child{
+width: 209px;
+height: 146px;
+left: 255px;
+top: 1098px;
+object-fit: cover;
+}
+.aboutus img:last-child{
+width: 209px;
+height: 127px;
+left: 255px;
+top: 958px;
+object-fit: cover;
+}
+.menu {
+height: 5141px;
+left: 162px;
+top: 0px;
+}
+.phone {
+width: 244px;
+left: 178px;
+top: 360px;
+font-size: 24px;
+line-height: 29px;
+color: #FFF;
+}
+.call{
+width: 266px;
+height: 63px;
+left: 178px;
+top: 519px;
+border: 3px solid #FFFFFF;
+background-color: #121212;
+}
+.call a{
+width: 214px;
+left: 26px;
+top: 17px;
+font-size: 24px;
+line-height: 29px;
+color: #FFF;
+}
+.call, .phone{
+	visibility: hidden;
+}
+#menu__toggle:checked ~ .phone,
+#menu__toggle:checked ~ .call{
+	visibility: visible;
+	z-index: 4;
+}
+}
+
+
+
+
+
+
+@media (max-width: 320px){
+	
 }
