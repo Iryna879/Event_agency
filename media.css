@@ -1,4 +1,7 @@
 @media (max-width: 1000px) and (min-width: 768px){
+	body, html{
+		width: 100%;
+}
 .container{width: 100%}
 	.call{
 		margin-left: 100px;
@@ -23,7 +26,7 @@ line-height: 22px;
 	width: 214px;
 height: 56px;
 top: 54px;
-left: 700px;
+left: 650px;
 }
 .container-fluid{
     width: 100%;
@@ -57,24 +60,60 @@ width: 297px;
 left: 679px;
 top: 1011px;
 }
+.events h6{
+left: 24px;}
+.events img {
+	height: 406px;}
+.events .child, .events .corporat {
+   left: 24px;}
+.events .child img, .events .dinner img,.events .corporat img,.events .show img{
+  width: 297px;}
+.events .birthday,.events .wedding {
+   left: 351px;}
+.events .birthday img, .events .wedding img{
+  width: 298px;}
+.events .dinner,.events .show  {
+   left: 679px;}
+.recentEvents h6{
+left: 24px;} 
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(5){
+left: 24px;}
+.recentEvents img:nth-child(3){
+left: 269px;}
+.recentEvents img:nth-child(4){
+left: 760px;} 
+.recentEvents img:nth-child(6){
+left: 351px;}
+.recentEvents img:nth-child(7){
+left: 679px;}
+.recentEvents img:nth-child(2){
+	width: 215px;}
+.recentEvents img:nth-child(3){
+width: 461px;}	
+.recentEvents img:nth-child(4){
+width: 216px;}
+.recentEvents img:nth-child(5),.recentEvents img:nth-child(7){
+width: 297px;}
+.recentEvents img:nth-child(6){
+width: 298px;}
+.recentEvents img{height: 298px; object-fit: cover;}
 }
 
 @media (max-width: 768px) and (min-width: 480px){
-.logo img {
-		left: 16px;
-	}
+	body, html{
+		width: 100%;
+}	
+.logo img {left: 16px;}
 .menu{
   visibility: hidden;
   top: 0;
   width: 320px;
-  height: 100%;
+  height: 4493px;
   margin: 0;
   background-color: #121212;
   opacity: 97%;
 	}
-.menu li{
-	display: block;
-	}
+.menu li{display: block;}
 .menu div{
 		 margin-top: 165px;
 		 margin-left: 16px;
@@ -98,9 +137,7 @@ position: absolute;
  z-index: 2;
  right: 0;
 }
-.phone{
-left: 158px;
-}
+.phone{left: 158px;}
 .call{
 	left: 410px;
 	margin-left: 0;
@@ -126,10 +163,53 @@ height: 312px;
 left: 528px;
 top: 1006px;
 }
+.events h6{
+width: 402px;
+left: 16px;
+top: 1471px;
+font-size: 26px;
+line-height: 32px;
+}
+.events figcaption{
+font-size: 18px;
+line-height: 22px;
+}
+.events img {height: 308px;}
+.events .child, .events .corporat {left: 16px;}
+.events .child img, .events .dinner img,.events .corporat img,.events .show img,
+.events .birthday img, .events .wedding img{width: 225px;}
+.events .corporat {top:1936px;}
+.events .wedding {top:1978px;}
+.events .show {top:2000px;}
+.events .birthday,.events .wedding {left: 272px;}
+.events .dinner,.events .show  {left: 528px;}
+.recentEvents h6{width: 270px;
+left: 16px;
+top: 2400px;
+font-size: 26px;
+line-height: 32px;} 
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(5){left: 16px;}
+.recentEvents img:nth-child(3){left: 271px;}
+.recentEvents img:nth-child(4){left: 528px;} 
+.recentEvents img:nth-child(6){left: 266px;}
+.recentEvents img:nth-child(7){left: 527px;}
+.recentEvents img:nth-child(2){width: 225px;}
+.recentEvents img:nth-child(3){width: 226px;}	
+.recentEvents img:nth-child(4){width: 221px;}
+.recentEvents img:nth-child(5){width: 225px;}
+.recentEvents img:nth-child(6){width: 231px;}
+.recentEvents img:nth-child(7){width: 222px;}
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(3),	
+.recentEvents img:nth-child(4){top:2470px;}
+.recentEvents img:nth-child(5),.recentEvents img:nth-child(6),	
+.recentEvents img:nth-child(7){top:2790px;}
 }
 
 @media (max-width: 480px) and (min-width: 320px){
-	.logo img{
+body, html{
+		width: 100%;
+}
+.logo img{
 		width: 90px;
 height: 90px;
 left: 16px;
@@ -212,12 +292,50 @@ color: #FFF;
 }
 .call, .phone{
 	visibility: hidden;
-}
-#menu__toggle:checked ~ .phone,
-#menu__toggle:checked ~ .call{
-	visibility: visible;
 	z-index: 4;
 }
+#menu__toggle:checked ~  .phone,
+#menu__toggle:checked ~  .call{
+	visibility: visible;
+}
+.events h6{
+width: 340px;
+top: 1294px;
+font-size: 22px;
+line-height: 27px;
+}
+.events figcaption{
+font-size: 16px;
+line-height: 20px;
+}
+.events img {height: 264px;}
+.events .child, .events .dinner, .events .wedding {left: 16px;}
+.events .birthday, .events .corporat, .events .show {left: 255px;}
+.events .child img, .events .dinner img,.events .corporat img,.events .show img,
+.events .birthday img, .events .wedding img{width: 209px;}
+.events .child {top:1328px;}
+.events .dinner {top:1666px;}
+.events .corporat {top:1724px;}
+.events .wedding {top:2004px;}
+.events .show {top:2062px;}
+.events .birthday{top:1386px;}
+.recentEvents h6{width: 228px;
+top: 2430px;
+font-size: 22px;
+line-height: 27px;} 
+.recentEvents img:nth-child(even), .recentEvents img:nth-child(odd) {
+   width: 209px;
+   height: 276px;
+   object-fit: cover;
+}
+.recentEvents img:nth-child(even){left: 16px;}
+.recentEvents img:nth-child(odd){left: 255px;}
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(3)
+ {top:2477px;}
+.recentEvents img:nth-child(4),.recentEvents img:nth-child(5)
+{top:2783px;}
+.recentEvents img:nth-child(6),.recentEvents img:nth-child(7)	
+{top:3089px;}
 }
 
 

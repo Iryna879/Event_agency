@@ -186,3 +186,78 @@ width: 270px;
 height: 384px;
 border-radius: 15px;
 }
+.events h6{
+position: absolute;
+width: 463px;
+left: 375px;
+top: 1470px;
+font-family: Montserrat-Bold;
+font-size: 30px;
+line-height: 37px;
+color: #5C2DBB;
+}
+.events figcaption{
+ font-family: Montserrat;
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+padding-top: 25px;
+}
+.events figure, .recentEvents img {
+     position: absolute;
+    border-radius: 15px;
+}
+.events .child {
+	top: 1533px;
+	left: 375px;
+}
+.events .birthday {
+	top: 1578px;
+	left: 775px;
+}
+.events .dinner {
+	top: 1623px;
+	left: 1175px;
+}
+.events .corporat {
+	top: 2018px;
+	left: 375px;
+}
+.events .wedding {
+	top: 2063px;
+	left: 775px;
+}
+.events .show {
+	top: 2109px;
+	left: 1175px;
+}
+.recentEvents h6{
+position: absolute;
+width: 311px;
+left: 375px;
+top: 2607px;
+font-family: Montserrat-Bold;
+font-size: 30px;
+line-height: 37px;
+color: #5C2DBB;
+}
+
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(3),
+.recentEvents img:nth-child(4){
+     top: 2680px;
+}
+.recentEvents img:nth-child(2),.recentEvents img:nth-child(5){
+left: 375px;}
+.recentEvents img:nth-child(3){
+left: 675px;}
+.recentEvents img:nth-child(4){
+left: 1275px;}
+
+.recentEvents img:nth-child(5),.recentEvents img:nth-child(6),
+.recentEvents img:nth-child(7){
+     top: 3008px;
+}
+.recentEvents img:nth-child(6){
+left: 776px;}
+.recentEvents img:nth-child(7){
+left: 1177px;}
