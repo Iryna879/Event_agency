@@ -116,13 +116,17 @@ font-weight: bold;
 }
 
 .container-fluid {
+	width: 100%;
 	position: absolute;
+	/*height: 729px;*/
 	top: 165px;
 	background: linear-gradient(98.62deg, rgba(0, 0, 0, 0.72) 28.21%, rgba(0, 0, 0, 0) 55.48%,
-	 rgba(255, 255, 255, 0) 110.01%), url(img/back.png);
-	background-size: cover;
+	 rgba(255, 255, 255, 0) 110.01%), url(img/back.png) 0 0/100% auto;
+	/*background-size: cover;*/
+	/*background-size: contain;*/
+	/*background-size: 100% 729px;*/
 	background-repeat: no-repeat;
-
+	/*background-position: center;*/
 }
 .fluid h6{
 margin-top: 143px;	
@@ -248,7 +252,7 @@ color: #5C2DBB;
 .recentEvents img:nth-child(4){
      top: 2680px;
 }
-.recentEvents img:nth-child(2),.recentEvents img:nth-child(5),
+.recentEvents img:nth-child(2), .recentEvents img:nth-child(5)
 {left: 375px;}
 .recentEvents img:nth-child(3){left: 675px;}
 .recentEvents img:nth-child(4){left: 1275px;}
@@ -268,7 +272,6 @@ line-height: 37px;
 color: #5C2DBB;
 }
 .ourTeam img{
-	/*position: absolute;*/
 	border-radius: 15px;
 }
 .ourTeam .box {position: absolute;}
