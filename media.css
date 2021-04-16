@@ -91,7 +91,7 @@ width: 297px;}
 .recentEvents img:nth-child(6){
 width: 298px;}
 .recentEvents img{height: 298px; object-fit: cover;}
-.ourTeam h6{left: 24px;}
+/*.ourTeam h6{left: 24px;}
 .ourTeam img{
 	width: 297px; 
 	height: 505px; 
@@ -120,7 +120,7 @@ margin-left: 670px;
 .ourTeam div.name:nth-child(11){
 margin-top: 500px;
 margin-left: 2%;
-}
+}*/
 }
 
 @media (max-width: 768px) and (min-width: 480px){
