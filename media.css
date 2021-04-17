@@ -9,94 +9,69 @@
         height: 56px;
 	}
 .menu{
-		margin-left: -330px;
 		font-size: 18px;
         line-height: 22px;
+        margin-left: 0;
 	}
 .menu li{margin-right: 30px;}
 .phone{
-		width: 183px;
-left: 564px;
+width: 183px;
+margin-left: 400px;
 font-size: 18px;
 line-height: 22px;
+ margin-top: -20px;
 	}
 .call{
 	width: 214px;
 height: 56px;
-top: 54px;
-left: 650px;
+margin-left: 600px;
 }
-.container-fluid{width: 100%;}
+.container-fluid{width: 125%;}
 .container-fluid .container{margin-left: 24px;}
 .logo img{
 width: 111px;
 height: 111px;
-left: 24px;
-top: 27px;
+margin-top: 27px;
 }
 .aboutus h5{
-	left: 24px;
-	margin-top: 0;
+	margin-top: 50px;
+	margin-left: 24px;
 }
 .aboutus p{
 width: 299px;
-left: 24px;
-top: 1056px;
-margin: 0;
+margin-left: 24px;
+margin-top: 75px;
 }
 .aboutus img:first-child{
 width: 298px;
-left: 351px;
-top: 1056px;
+margin-left: 280px;
+margin-top: -55%;
 }
 .aboutus img:last-child{
 width: 297px;
-left: 679px;
-top: 1011px;
+margin-left: 30px;
+margin-top: 117px;
+margin-top: -55%;
 }
-.events h6{
-left: 24px;}
+.photo h6,.recentEvents h6, .ourTeam h6{
+margin-left: 24px;}
+.events, .photos, .ourTeam .boxes {margin-left: 24px;}
 .events img {
+	width: 297px;
 	height: 406px;}
-.events .child, .events .corporat {
-   left: 24px;}
-.events .child img, .events .dinner img,.events .corporat img,.events .show img{
-  width: 297px;}
-.events .birthday,.events .wedding {
-   left: 351px;}
-.events .birthday img, .events .wedding img{
-  width: 298px;}
-.events .dinner,.events .show  {
-   left: 679px;}
-.recentEvents h6{
-left: 24px;} 
-.recentEvents img:nth-child(2),.recentEvents img:nth-child(5){
-left: 24px;}
-.recentEvents img:nth-child(3){
-left: 269px;}
-.recentEvents img:nth-child(4){
-left: 760px;} 
-.recentEvents img:nth-child(6){
-left: 351px;}
-.recentEvents img:nth-child(7){
-left: 679px;}
-.recentEvents img:nth-child(2){
-	width: 215px;}
-.recentEvents img:nth-child(3){
-width: 461px;}	
-.recentEvents img:nth-child(4){
-width: 216px;}
-.recentEvents img:nth-child(5),.recentEvents img:nth-child(7){
-width: 297px;}
-.recentEvents img:nth-child(6){
-width: 298px;}
-.recentEvents img{height: 298px; object-fit: cover;}
-.ourTeam h6{left: 24px;}
+.photos img {object-fit: cover;
+height: 298px;}
+.recentEvents .photos:nth-child(2) img:nth-child(1) {width: 215px;}
+.recentEvents .photos:nth-child(2) img:nth-child(2) {width: 461px;}
+.recentEvents .photos:nth-child(2) img:nth-child(3) {width: 216px;}	
+.recentEvents .photos:nth-child(3) img:nth-child(1) {width: 297px;}	
+.recentEvents .photos:nth-child(3) img:nth-child(2) {width: 298px;}	
+.recentEvents .photos:nth-child(3) img:nth-child(3) {width: 297px;}	
 .ourTeam img{
 	width: 297px; 
 	height: 505px; 
 	object-fit: cover;}
-.ourTeam .box:nth-child(2){top:3515px;}
+/*.ourTeam .box:nth-child(2){top:3515px;}
 .ourTeam .box:nth-child(3){top:3470px;}
 .ourTeam .box:nth-child(2),.ourTeam .box:nth-child(5){left: 24px;}
 .ourTeam .box:nth-child(3),.ourTeam .box:nth-child(6){left: 351px;}
@@ -104,7 +79,7 @@ width: 298px;}
 .ourTeam .box:nth-child(4),.ourTeam .box:nth-child(7){left: 679px;}
 .ourTeam .box:nth-child(5){top:4050px;}
 .ourTeam .box:nth-child(6){top:4005px;}
-.ourTeam .box:nth-child(7){top:3960px;}
+.ourTeam .box:nth-child(7){top:3960px;}*/
 .ourTeam span,.ourTeam p{padding-left: 18.46px;}
 .ourTeam div.name{width: 247.23px;}
 }
