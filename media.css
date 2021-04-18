@@ -3,15 +3,11 @@
 		width: 100%;
 }
 .container{width: 100%}
-.call{
-		margin-left: 100px;
-        width: 214px;
-        height: 56px;
-	}
 .menu{
 		font-size: 18px;
         line-height: 22px;
         margin-left: 0;
+        display: inline-block;
 	}
 .menu li{margin-right: 30px;}
 .phone{
@@ -19,7 +15,7 @@ width: 183px;
 margin-left: 400px;
 font-size: 18px;
 line-height: 22px;
- margin-top: -20px;
+ margin-top: -25px;
 	}
 .call{
 	width: 214px;
@@ -280,8 +276,8 @@ margin-right: 0;}
 }
 .phone {
 width: 244px;
-margin-left: 60%;
-margin-top: 250px;
+margin-left: 10%;
+margin-top: 450px;
 font-size: 24px;
 line-height: 29px;
 color: #FFF;
@@ -290,7 +286,7 @@ margin-bottom: 47px;
 .call{
 width: 266px;
 height: 63px;
-margin-left: 60%;
+margin-left: 10%;
 margin-top: 0px;
 border: 3px solid #FFFFFF;
 background-color: #121212;
@@ -303,11 +299,12 @@ color: #FFF;
 }
 .call, .phone{
 	position: relative;
+	/*position: absolute;*/
 	visibility: hidden;
 	z-index: 4;
 }
-#menu__toggle:checked ~  .menu .phone,
-#menu__toggle:checked ~  .menu .call{
+#menu__toggle:checked ~  div .phone,
+#menu__toggle:checked ~ div  .call{
 	visibility: visible;
 }
 .logo {height: 122px; }
