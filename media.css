@@ -87,7 +87,8 @@ height: 298px;}
 @media (max-width: 768px) and (min-width: 480px){
 	body, html{
 		width: 100%;
-}	
+}
+.logo div:nth-child(1){ width: 111px; }	
 .logo img {
 	margin-left: 0px;}
 .menu{
@@ -99,6 +100,7 @@ height: 298px;}
   margin: 0;
   background-color: #121212;
   opacity: 97%;
+  left: 80%;
 	}
 .menu li{display: block;}
 .menu div{
@@ -123,14 +125,16 @@ height: 298px;}
  right: 0;
 }
 .phone{margin-left: 31px;
-margin-top: 50px;}
+margin-top: 50px;
+width: 200px;}
 /*.phone {position: absolute;
 width: 183px;
 height: 22px;
 left: 158px;
 top: 72px;
 margin: 0;}*/
-.call{margin-left: 253px;}
+.call{margin-left: 280px;
+width: 214px;}
 /*.call{
 position: absolute;
 width: 214px;
@@ -138,7 +142,7 @@ height: 56px;
 left: 410px;
 top: 54px;
 margin:0;}*/
-.container-fluid, .container{width: 100%; margin:0;}
+.container-fluid, .container{width: 120%; margin:0;}
 .aboutus h5{
 	margin-left: 0px;
 	font-size: 26px;
@@ -237,9 +241,11 @@ body, html{
    margin-left: 16px;
    margin-top: 16px;
 }
+.logo div:nth-child(2) {margin-left: 30%;
+margin-top: -30%;}
 .menu{
   visibility: hidden;
-  margin-top: 0;
+  margin-top: -130px;
   width: 320px;
   height: 5141px;
   background-color: #121212;
@@ -247,10 +253,11 @@ body, html{
   left: 45%;
   /*left: 162px;*/
 }
-.menu li{display: block;}
+.menu li{display: block;
+margin-right: 0;}
 .menu div{
-		 margin-top: 144px;
-		 margin-left: 16px;
+	margin-top: 320px;
+    margin-left: 18px;
 	}
 .menu  a {
 	display: block;
@@ -263,8 +270,8 @@ body, html{
 .menu__btn{
 	visibility:visible;
 	z-index: 3;
-	margin-left: 0;
-    margin-top: -80px;
+	left: 90%;
+    margin-top: 80px;
 }	
 #menu__toggle:checked ~ .menu  {
   visibility: visible;
@@ -273,7 +280,7 @@ body, html{
 }
 .phone {
 width: 244px;
-margin-left: 48%;
+margin-left: 60%;
 margin-top: 250px;
 font-size: 24px;
 line-height: 29px;
@@ -283,7 +290,7 @@ margin-bottom: 47px;
 .call{
 width: 266px;
 height: 63px;
-margin-left: 48%;
+margin-left: 60%;
 margin-top: 0px;
 border: 3px solid #FFFFFF;
 background-color: #121212;
@@ -297,13 +304,14 @@ color: #FFF;
 .call, .phone{
 	position: relative;
 	visibility: hidden;
-	z-index: 999;
+	z-index: 4;
 }
-#menu__toggle:checked ~  div .phone,
-#menu__toggle:checked ~  div .call{
+#menu__toggle:checked ~  .menu .phone,
+#menu__toggle:checked ~  .menu .call{
 	visibility: visible;
 }
-.container-fluid{ margin-top:-350px; width: 110%;}
+.logo {height: 122px; }
+.container-fluid{ width: 110%;}
 .fluid h6{width: 437px;
 font-size: 26px;
 line-height: 32px;}
@@ -316,11 +324,13 @@ height: 70px;
 margin-bottom: 343px;}
 .aboutus h5{width: 159px;
 font-size: 22px;
-line-height: 27px;}
+line-height: 27px;
+margin-left: 0;}
 .aboutus p{width: 209px;
 font-size: 16px;
 line-height: 136%;
-margin-top: 30px;}
+margin-top: 30px;
+margin-left: 0;}
 .aboutus img:first-child{
 width: 209px; 
 height: 146px; 
@@ -339,19 +349,33 @@ object-fit: cover;
 width: 340px;
 font-size: 22px;
 line-height: 27px;
+margin-left: 0;
 }
 .events figcaption{
 font-size: 16px;
 line-height: 20px;
 }
+.events {margin-left: 0;
+display: grid;
+	grid-template-columns: 209px 209px;
+	grid-template-rows: auto;
+	grid-column-gap: 30px;}
 .events img {height: 264px; width: 209px;}
-.events .dinner {margin-top:355px; margin-left: -480px;}
+.events .child, .events .birthday, .events .dinner, .events .corporat,
+.events .wedding, .events .show {height: 264px; }
+/*.events .dinner {margin-top:355px; margin-left: -480px;}
 .events .corporat {margin-top:-270px; margin-left: 230px;}
 .events .wedding {margin-top:0px;margin-left: -470px;}
-.events .show {margin-top:71px; margin-left: -10px;}
+.events .show {margin-top:71px; margin-left: -10px;}*/
+.photo .events:nth-child(3){margin-top:20%;}
+.events .dinner {grid-column: 1/2; grid-row: 2/2; margin-top: 0;}
+.events .corporat {grid-column: 2/2; grid-row: 2/2; margin-top: -290%;}
+.events .wedding {grid-column: 1/2; grid-row: 1/1; }
+.events .show {grid-column: 2/2; grid-row: 1/1;}
 .recentEvents h6{width: 228px;
 font-size: 22px;
-line-height: 27px;} 
+line-height: 27px;
+margin-left: 0;} 
 .recentEvents img {
    width: 209px !important;
    height: 276px;
@@ -419,9 +443,19 @@ padding-top: 42.6px;
    height: 74.9px;
 	top: 260px;
 }*/ 
-.recentEvents .photos:nth-child(2) img:nth-child(3) {margin-top: 336px; margin-left: -100%;}	
-.recentEvents .photos:nth-child(3) img:nth-child(1) {margin-top: -67%; margin-left: 230px;}	
-.recentEvents .photos:nth-child(3) img:nth-child(2) {margin-top: 0px;margin-left: -100%;}		
+.photos {
+	margin-left: 0;
+	display: grid;
+	grid-template-columns: 209px 209px;
+	grid-auto-columns: minmax(55px, auto);
+	grid-column-gap: 30px;
+}
+/*.recentEvents .photos:nth-child(2) img:nth-child(3) {margin-top: 336px; margin-left: -100%;}*/	
+.recentEvents .photos:nth-child(3) img:nth-child(1) {margin-top: -294%; /*margin-left: 230px;*/}	
+/*.recentEvents .photos:nth-child(3) img:nth-child(2) {margin-top: 0px;margin-left: -100%;}	*/
+.recentEvents .photos:nth-child(3) img:nth-child(1) {grid-column: 2/2; grid-row: 2/2;}
+.recentEvents .photos:nth-child(3) img:nth-child(2) {grid-column: 1/2; grid-row: 1/2;}
+.recentEvents .photos:nth-child(3) img:nth-child(3) {grid-column: 2/2; grid-row: 1/2;}
 .ourTeam img{
 	width: 209px; 
 	height: 347px;
@@ -429,11 +463,24 @@ padding-top: 42.6px;
 .ourTeam h6{width: 208px;
 margin-top: 50px;
 font-size: 26px;
-line-height: 32px;}
-.ourTeam .boxes .box:nth-child(3) {margin-top: 482px;margin-left: -100%;}
+line-height: 32px;
+margin-left: 0;}
+/*.ourTeam .boxes .box:nth-child(3) {margin-top: 482px;margin-left: -100%;}
 .ourTeam .boxes:last-child .box:nth-child(1) {margin-top: -83%; margin-left: 250px;}
 .ourTeam .boxes:last-child .box:nth-child(2) {margin-top:30px; margin-left:-100%;}
-.ourTeam .boxes:last-child .box:nth-child(3) {margin-top: 0; margin-left: 5%;}
+.ourTeam .boxes:last-child .box:nth-child(3) {margin-top: 0; margin-left: 5%;}*/
+.ourTeam .boxes{
+	margin-left: 0;
+	display: grid;
+	grid-template-columns: 209px 209px;
+	grid-auto-columns: minmax(55px, auto);
+	grid-column-gap: 30px;
+}
+.ourTeam .boxes:last-child .box:nth-child(1) {margin-top: -370%; grid-column: 2/2; grid-row: 2/2;}
+.ourTeam .boxes:last-child .box:nth-child(2) {grid-column: 1/2; grid-row: 1/2;}
+.ourTeam .boxes:last-child .box:nth-child(3) {grid-column: 2/2; grid-row: 1/2;}
+.ourTeam .boxes .box:nth-child(2)  {margin-left: 0px;}
+.ourTeam .boxes .box:nth-child(3)  {margin-left: 0px;}
 .ourTeam span,.ourTeam p{padding-left: 13.99px;}
 .ourTeam span{
 	font-size: 18px;
