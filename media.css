@@ -20,20 +20,21 @@ font-size: 18px;
 height: 56px;
 margin-left: 600px;
 }
-div.container-fluid{min-width: 1000px;}
+div.container-fluid{min-width: 1000px;
+background: linear-gradient(98.62deg, rgba(0, 0, 0, 0.72) 28.21%, rgba(0, 0, 0, 0) 55.48%,
+	 rgba(255, 255, 255, 0) 110.01%), url(img/back2.png);
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;}
 .container-fluid .container{margin-left: 24px;}
 .logo img{
 width: 111px;
 height: 111px;
 margin-top: 27px;
 }
-.aboutus h5{
-	margin-top: 50px;
-	margin-left: 24px;
-}
+.aboutus h5{margin-top: 50px;}
 .aboutus p{
 width: 299px;
-margin-left: 24px;
 margin-top: 75px;
 }
 .aboutus img:first-child{
@@ -46,14 +47,14 @@ width: 297px;
 margin-top: 117px;
 margin-top: -65%;
 }
-.photo h6,.recentEvents h6, .ourTeam h6, .events, .photos, .ourTeam .boxes{
-margin-left: 24px;}
-/*.events, .photos, .ourTeam .boxes {margin-left: 24px;}*/
+.events .child, .events .birthday, .events .corporat, .events .wedding
+ {margin-right: 30px;}
 .events img {
 	width: 297px;
 	height: 406px;}
 .photos img {object-fit: cover;
-height: 298px;}
+height: 298px;
+margin-right: 30px; }
 .recentEvents .photos:nth-child(2) img:nth-child(1) {width: 215px;}
 .recentEvents .photos:nth-child(2) img:nth-child(2) {width: 461px;}
 .recentEvents .photos:nth-child(2) img:nth-child(3) {width: 216px;}	
@@ -64,17 +65,12 @@ height: 298px;}
 	width: 297px; 
 	height: 505px; 
 	object-fit: cover;}
-/*.ourTeam .box:nth-child(2){top:3515px;}
-.ourTeam .box:nth-child(3){top:3470px;}
-.ourTeam .box:nth-child(2),.ourTeam .box:nth-child(5){left: 24px;}
-.ourTeam .box:nth-child(3),.ourTeam .box:nth-child(6){left: 351px;}
-.ourTeam .box:nth-child(4){top:3425px;}
-.ourTeam .box:nth-child(4),.ourTeam .box:nth-child(7){left: 679px;}
-.ourTeam .box:nth-child(5){top:4050px;}
-.ourTeam .box:nth-child(6){top:4005px;}
-.ourTeam .box:nth-child(7){top:3960px;}*/
+.ourTeam .boxes:nth-child(2) .box:nth-child(2),.ourTeam .boxes:nth-child(2) .box:nth-child(3),
+.ourTeam .boxes:nth-child(3) .box:nth-child(2), .ourTeam .boxes:nth-child(3) .box:nth-child(3)
+  {margin-left: 30px;}
 .ourTeam span,.ourTeam p{padding-left: 18.46px;}
 .ourTeam div.name{width: 247.23px;}
+.ourTeam div.info {width: 297px;}
 footer.container-fluid{min-width: 1000px;}
 .footer {width: 150%}
 .footer p{margin-left: 165px;}
@@ -85,9 +81,6 @@ footer.container-fluid{min-width: 1000px;}
 }
 
 @media (max-width: 768px) and (min-width: 480px){
-	body, html{
-		width: 100%;
-}
 .logo, .logo div {height: 144px;}
 .logo div:nth-child(1){ width: 111px; height: 131px; }	
 .logo div:nth-child(2) div.ph{ 
@@ -136,32 +129,17 @@ width: 112px;}
  right: 0;
 }
 .phone{margin-left: 0;
-	/*margin-left: 31px;*/
-/*margin-top: 50px;*/
 width: 200px;}
-/*.phone {position: absolute;
-width: 183px;
-height: 22px;
-left: 158px;
-top: 72px;
-margin: 0;}*/
 .call{margin-left: 0;
 width: 214px;}
-/*.call{
-position: absolute;
-width: 214px;
-height: 56px;
-left: 410px;
-top: 54px;
-margin:0;}*/
 div.container-fluid, .container{min-width: 768px; margin:0;}
-.aboutus h5{
-	margin-left: 0px;
-	font-size: 26px;
-}
+	 div.container-fluid{
+background: linear-gradient(98.62deg, rgba(0, 0, 0, 0.72) 28.21%, rgba(0, 0, 0, 0) 55.48%,
+	 rgba(255, 255, 255, 0) 110.01%), url(img/back2.png);
+	 background-size: cover;}
+.aboutus h5{font-size: 26px;}
 .aboutus p{
 width: 225px;
-margin-left: 0px;
 font-size: 18px;}
 .aboutus img:first-child{
 width: 226px;
@@ -176,13 +154,14 @@ margin-left: 0px;
 margin-top: -390px;
 }
 .photo h6,.recentEvents h6, .ourTeam h6,
-.events, .photos, .ourTeam .boxes{margin-left: 0;}
 .photo h6{
 width: 402px;
 margin-top: 50px;
 font-size: 26px;
 }
 .events figcaption{font-size: 18px;}
+.events .child, .events .birthday, .events .corporat, .events .wedding
+ {margin-right: 30px;}
 .events img {
    width: 225px;
    height: 308px;}
@@ -215,6 +194,8 @@ margin: 0;
 .ourTeam div.name{width: 187.3px;
 height: 81.16px;
 margin-top: -95px;}
+.ourTeam div.info {width: 224px; height: 376px;}
+.ourTeam div.info p:nth-child(3){width: 220px;}
 footer.container-fluid{min-width: 768px;}
 .footer {width: 150%}
 .footer p{margin-left: 94px;}
@@ -225,9 +206,6 @@ footer.container-fluid{min-width: 768px;}
 }
 
 @media (max-width: 480px) and (min-width: 320px){
-body, html{
-		width: 100%;
-}
 .logo img{
 	width: 90px;
    height: 90px;
@@ -294,7 +272,6 @@ color: #FFF;
 
 .call, .phone{
 	margin-left: 0;
-	/*position: relative;*/
 	position: absolute;
 	visibility: hidden;
 	z-index: 4;
@@ -304,7 +281,8 @@ color: #FFF;
 	visibility: visible;
 }
 .logo {height: 122px; }
-div.container-fluid{ min-width: 480px;}
+div.container-fluid{ min-width: 480px; 
+	height: 729px;}
 .fluid h6{width: 437px;
 font-size: 26px;}
 .fluid p{width: 417px;
@@ -314,12 +292,10 @@ font-size: 19px;}
 height: 70px;
 margin-bottom: 343px;}
 .aboutus h5{width: 159px;
-font-size: 22px;
-margin-left: 0;}
+font-size: 22px;}
 .aboutus p{width: 209px;
 font-size: 16px;
-margin-top: 30px;
-margin-left: 0;}
+margin-top: 30px;}
 .aboutus img:first-child{
 width: 209px; 
 height: 146px; 
@@ -337,10 +313,9 @@ object-fit: cover;
 .photo h6{
 width: 340px;
 font-size: 22px;
-margin-left: 0;
 }
 .events figcaption{font-size: 16px;}
-.events {margin-left: 0;
+.events {
 display: grid;
 	grid-template-columns: 209px 209px;
 	grid-template-rows: auto;
@@ -348,21 +323,20 @@ display: grid;
 .events img {height: 264px; width: 209px;}
 .events .child, .events .birthday, .events .dinner, .events .corporat,
 .events .wedding, .events .show {height: 264px; }
-.photo .events:nth-child(3){margin-top:20%;}
+.photo .events:nth-child(3){margin-top:100px;}
 .events .dinner {grid-column: 1/2; grid-row: 2/2; margin-top: 0;}
-.events .corporat {grid-column: 2/2; grid-row: 2/2; margin-top: -290%;}
+.events .corporat {grid-column: 2/2; grid-row: 2/2; margin-top: -600px;}
 .events .wedding {grid-column: 1/2; grid-row: 1/1; }
 .events .show {grid-column: 2/2; grid-row: 1/1;}
 .recentEvents h6{width: 228px;
 font-size: 22px;
-margin-left: 0;} 
+margin-top:54px;} 
 .recentEvents img {
    width: 209px !important;
    height: 276px;
    object-fit: cover;
 }
 .photos {
-	margin-left: 0;
 	display: grid;
 	grid-template-columns: 209px 209px;
 	grid-auto-columns: minmax(55px, auto);
@@ -378,25 +352,23 @@ margin-left: 0;}
 	object-fit: cover; }
 .ourTeam h6{width: 208px;
 margin-top: 50px;
-font-size: 26px;
-margin-left: 0;}
+font-size: 26px;}
 .ourTeam .boxes{
-	margin-left: 0;
 	display: grid;
 	grid-template-columns: 209px 209px;
 	grid-auto-columns: minmax(55px, auto);
 	grid-column-gap: 30px;
 }
-.ourTeam .boxes:last-child .box:nth-child(1) {margin-top: -390%; grid-column: 2/2; grid-row: 2/2;}
+.ourTeam .boxes:last-child .box:nth-child(1) {margin-top: -390%; 
+	grid-column: 2/2; grid-row: 2/2;}
 .ourTeam .boxes:last-child .box:nth-child(2) {grid-column: 1/2;
- grid-row: 1/2; margin-left: 0px; margin-top: 5px;}
-.ourTeam .boxes:last-child .box:nth-child(3) {grid-column: 2/2; grid-row: 1/2;
-margin-top:-50px; margin-left: 0}
+ grid-row: 1/2; margin-left: 0; margin-top: 5px;}
+.ourTeam .boxes:last-child .box:nth-child(3) {grid-column: 2/2; 
+	grid-row: 1/2; margin-top:-50px; margin-left: 0}
 .ourTeam .boxes:nth-child(2) .box:nth-child(2),
 .ourTeam .boxes:nth-child(2)  .box:nth-child(3) 
  {margin-left: 0;}
  .ourTeam .boxes:nth-child(2) .box:nth-child(3) {margin-top: 0;}
-
 .ourTeam span,.ourTeam p{padding-left: 13.99px;}
 .ourTeam span{
 	font-size: 18px;
@@ -411,6 +383,7 @@ margin: 0;
 height: 81.16px;
 margin-top: -95px;
 margin-left: 10px;}
+.ourTeam div.info {width: 209px; height: 347px;}
 footer.container-fluid{min-width: 480px;}
 .footer p{margin-left: 16px;
 width: 133px;
@@ -435,5 +408,205 @@ margin-top: 25px;}
 
 
 @media (max-width: 320px){
-	
+.logo {height: 90px;}
+.logo img{
+	width: 58px;
+   height: 58px;
+}
+.menu{
+  position: absolute;	
+  visibility: hidden;
+  top: 0;
+  width: 320px;
+  height: 3866px;
+  margin: 0;
+  background-color: #121212;
+  opacity: 97%;
+	}
+.menu li{width: 112px;}
+.menu div{
+		 margin-top: 165px;
+		 margin-left: 16px;
+	}
+.menu  a {
+	display: block;
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+  padding-bottom: 30px;
+}
+.menu__btn{
+	width: 35px;
+	left: 230px;
+    top:30px;
+    visibility:visible;
+     z-index: 3;
+	}
+	.menu__btn > span::before {
+  content: '';
+  top: -15px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 15px;
+}	
+#menu__toggle:checked ~ .menu  {
+  visibility: visible;
+ z-index: 2;
+ left: 0;
+}
+.logo div:nth-child(2) div.ph{ 
+position: absolute;
+left:16px;
+top:420px;}
+.logo div:nth-child(2) div.cl{ 
+position: absolute;
+left:16px;
+top:500px;}		
+.phone {
+font-size: 24px;
+color: #fff;
+width: 244px;
+}
+.call{
+width: 266px;
+height: 63px;
+border: 3px solid #FFFFFF;
+background-color: #121212;
+font-size: 24px;
+color: #FFF;
+}
+.call, .phone{
+	margin-left: 0;
+	position: absolute;
+	visibility: hidden;
+	z-index: 4;
+}
+#menu__toggle:checked ~  div .phone,
+#menu__toggle:checked ~ div  .call{
+	visibility: visible;
+}
+div.container-fluid{ min-width: 320px; height: 498px; }
+.fluid h6{width: 286px;
+font-size: 17px;}
+.fluid p{width: 286px;
+font-size: 13px;}
+.fluid button {
+width: 205px;
+height: 53px;}
+.aboutus h5{width: 109px;
+font-size: 15px;}
+.aboutus p{width: 130px;
+font-size: 12px;
+margin-top: 30px;}
+.aboutus img:first-child{
+width: 129px; 
+height: 102px; 
+margin-left: 120px;
+margin-top: -150px;
+object-fit: cover;
+}
+.aboutus img:last-child{
+width: 129px;
+height: 102px;
+margin-left: -150px;
+margin-top: -300px;
+object-fit: cover;
+}
+.photo h6{
+width: 263px;
+font-size: 17px;
+}
+.events figcaption{font-size: 14px; width: 150%;}
+.photo figcaption.dinner2 {visibility: visible; margin-top: -50px;}
+.photo figcaption.dinner1 {visibility: hidden;}
+.events {
+    display: grid;
+	grid-template-columns: 129px 129px;
+	grid-template-rows: 276px;
+grid-column-gap: 30px;}
+.events img {height: 163px; width: 129px; border-radius: 15px;}
+.photo .events:nth-child(3){margin-top:0;}
+.events .dinner {grid-column: 1/2; grid-row: 2/2; margin-top: 0;}
+.events .corporat {grid-column: 2/2; grid-row: 2/2; margin-top: -510px;}
+.events .wedding {grid-column: 1/2; grid-row: 1/1; }
+.events .show {grid-column: 2/2; grid-row: 1/1;}
+.recentEvents h6{width: 177px;
+font-size: 17px;} 
+.recentEvents img {
+   width: 129px !important;
+   height: 170px;
+   object-fit: cover;
+}
+.photos {
+	margin-left: 0;
+	display: grid;
+	grid-template-columns: 129px 129px;
+	grid-auto-columns: minmax(170px, auto);
+	grid-column-gap: 30px;
+}
+.recentEvents .photos:nth-child(3) img:nth-child(1) {grid-column: 2/2; 
+	grid-row: 2/2; margin-top: -310%;}
+.recentEvents .photos:nth-child(3) img:nth-child(2) {grid-column: 1/2; grid-row: 1/2;}
+.recentEvents .photos:nth-child(3) img:nth-child(3) {grid-column: 2/2; grid-row: 1/2;}
+.ourTeam img{
+	width: 128px; 
+	height: 213px;
+	object-fit: cover; }
+.ourTeam h6{width: 136px;
+margin-top: 50px;
+font-size: 17px;}
+.ourTeam .boxes{
+	display: grid;
+	grid-template-columns: 128px 128px;
+	grid-auto-columns: minmax(213px, auto);
+	grid-column-gap: 30px;
+}
+.ourTeam .boxes:last-child .box:nth-child(1) {margin-top: -550px; grid-column: 2/2; grid-row: 2/2;}
+.ourTeam .boxes:last-child .box:nth-child(2) {grid-column: 1/2;
+ grid-row: 1/2; margin-top: 0; margin-left: 0;}
+.ourTeam .boxes:last-child .box:nth-child(3) {grid-column: 2/2; grid-row: 1/2; margin-left: 0; }
+.ourTeam .boxes:nth-child(2) .box:nth-child(2) {margin-top: 40px; margin-left: 0;}
+ .ourTeam .boxes:nth-child(2) .box:nth-child(3) {margin-top: 0; margin-left: 0;}
+.ourTeam .boxes:nth-child(2) .box:nth-child(1) {margin-top: 81px;}
+.ourTeam span,.ourTeam p{padding-left: 7.96px;}
+.ourTeam span{
+	font-size: 11px;
+padding-top: 9.7px;
+}
+.ourTeam p{
+	font-size: 9px;
+padding-top: 26.15px;
+margin: 0;
+}
+.ourTeam div.name{width: 106.55px;
+height: 45.97px;
+margin-top: -55px;
+margin-left: 10px;
+border-radius: 10px;}
+.ourTeam div.info {width: 128px; height: 213px;}
+.ourTeam div.info p:nth-child(3){width: 120px; margin-top: 44px;
+	font-size: 8px;}
+.ourTeam div.info span{margin-top: 28px;}
+.ourTeam div.info p:nth-child(2){
+	margin-top: 28px;
+}
+footer.container-fluid{min-width: 320px; height: 561px;}
+.footer p{margin-left: 24px;
+width: 133px;
+font-size: 20px;}
+.footer .social {margin-left: 10px;}
+.footer .number p {margin-left: 24px;
+width: 206px;}
+.footer .button {margin-left: 24px;}
+.footer .button button{	
+height: 66px;
+width: 210px;
+font-size: 16px;
+margin-bottom: 23px;
+}
+.footer .copy {margin-left: 27px;
+margin-top: 25px;
+width: 270px;
+font-size: 18px;}
 }
